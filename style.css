@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container{
+    min-height: 100vh;
+}
+
+.cookie-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+.cookie-search{
+    margin: 2rem 0;
+
+}
+
+.cookie-search h1{
+    font-family: 'Poppins', sans-serif;
+
+}
+.cookie-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;    
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-family: inherit;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder{
+    color: grey;
+
+}
+
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.45s linear;
+    background-color: orange;
+
+}
+
+.search-btn:hover{
+    background-color: rgb(230, 218, 54);
+}
+
+.cookie-result{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+.cookie{
+    margin: 2.4rem 0;
+}
+.cookie-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+.cookie-img img{
+    width: 100%;
+    display: block;
+}
+
+.cookie-name{
+    padding: 1.5rem 0.5rem;
+}
+.cookie-name h3{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.recipe-btn{
+    text-decoration: none;
+   color: white;
+    background:rgb(255, 136, 0);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    transition: all 0.4s linear;
+}
+.recipe-btn:hover{
+    background:rgb(165, 113, 54);
+
+}
+
+.cookie-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background-image:url(https://media.istockphoto.com/photos/cupcake-with-chocolate-icing-and-a-cherry-picture-id153868303?k=6&m=153868303&s=612x612&w=0&h=gzZpubPLsI4AyQAYbG5y0Pdw2iyBV8g_FsqdjPOeDko=);
+    border-radius: 1rem;
+    width: 50%;
+    height: 70%;
+    display: none;
+    overflow:scroll;    
+    padding: 2rem 0;
+
+
+}
+.cookie-details::-webkit-scrollbar{
+    width: 10px;
+}
+.cookie-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+}
+
+
+
+.showCookie{
+    display: block;
+}
+.cookie-details-content{
+    margin: 2rem;
+}
+
+
+.cookie-details{
+    width: 700px;
+}
+
+.cookie-close-btn{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.8rem;
+    background: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+
+.cookie-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.cookie-category{
+    background: #fff;
+    font-weight: 600;
+    color: orange;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    
+}
+
+.cookie-instruct{
+    padding: 1rem 0;
+}
+
+.cookie-type-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.cookie-link{
+    margin: 1.4rem 0;
+}
+
+.cookie-link a{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: all 0.4s linear;
+}
+
+
+
+@media screen and (min-width: 600px){
+    .cookie-search-box{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #cookie{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .cookie-item{
+        margin: 0;
+    }
+    .cookie-details{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #cookie{
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
